@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/showArchive"
+        android:title="@string/menu_archiveSerie"
+        android:titleCondensed="@string/menu_archiveSerie2">
+    </item>
+
+    <item
+        android:id="@+id/showUnarchive"
+        android:title="@string/menu_unarchiveSerie"
+        android:titleCondensed="@string/menu_unarchiveSerie2">
+    </item>
+
+    <item
+        android:id="@+id/showRecommend"
+        android:enabled="false"
+        android:title="@string/menu_recommendSerie"
+        android:titleCondensed="@string/menu_recommendSerie2">
+    </item>
+
+    <item
+        android:id="@+id/showDelete"
+        android:title="@string/menu_deleteSerie"
+        android:titleCondensed="@string/menu_deleteSerie2">
+    </item>
+
+</menu>

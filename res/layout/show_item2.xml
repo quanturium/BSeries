@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="3dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/itemShowIcon"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/bullet_archived" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/gray2"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/itemShowTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/itemShowIcon"
+                    android:text="TextView"
+                    android:textAppearance="?android:attr/textAppearanceLarge" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/itemShowArchived"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/itemShowIcon"
+                    android:text="TextView" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/gray2"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/itemShowIcon2"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/episode_icon"
+                android:onClick="onClick"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/bullet_tv_add" >
+            </ImageView>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

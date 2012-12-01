@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/episodeHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                layout="@layout/episode_header" >
+            </include>
+
+            <include
+                android:id="@+id/itemSeparator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                layout="@layout/episode_separator" >
+            </include>
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                    
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        android:id="@+id/episodeTab1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Informations" />
+
+                    <TextView
+                        android:id="@+id/episodeTab2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Commentaires" />
+
+                    <TextView
+                        android:id="@+id/episodeTab3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Sous-titres" />
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray3" />
+
+            <LinearLayout
+                android:id="@+id/episodeTabContent1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/episodeItem"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/episode_item" >
+                </include>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/gray3" />
+
+                <TextView
+                    android:id="@+id/episodeDescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/episodeTabContent2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/episodeCommentairesLoading"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"  
+                    android:layout_marginTop="10dp"               
+                    layout="@layout/include_loading" >
+                </include>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/episodeTabContent3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

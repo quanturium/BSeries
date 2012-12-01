@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quanturium.bseries"
+    android:versionCode="13"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:icon="@drawable/icon_app"
+        android:label="@string/application_name"
+        android:theme="@style/MyTheme" >
+        <service android:name=".ServiceUpdates" >
+        </service>
+
+        <activity
+            android:name=".ActivityHome"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/application_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivitySearch"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".ActivityShows"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/application_name" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".ActivitySearch" />
+        </activity>
+        <activity
+            android:name=".ActivityEpisodes"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/application_name" >
+        </activity>
+        <activity
+            android:name=".ActivityUser"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/application_name" >
+        </activity>
+        <activity
+            android:name=".ActivityEpisodeInfos"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/application_name" >
+        </activity>
+        <activity
+            android:name=".ActivityShowInfos"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/application_name" >
+        </activity>
+        <activity
+            android:name=".ActivityPlanning"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/application_name" >
+        </activity>
+        <activity
+            android:name=".ActivityEpisodesUnseen"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/application_name" >
+        </activity>
+        <activity
+            android:name=".ActivityFriends"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/application_name" >
+        </activity>
+        <activity
+            android:name=".ActivityNotifications"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/application_name" >
+        </activity>
+        <activity
+            android:name=".ActivityLogin"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/application_name" >
+        </activity>
+        <activity
+            android:name=".ActivityRegister"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/application_name" >
+        </activity>
+        <activity
+            android:name=".ActivityAPropos"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/application_name" >
+        </activity>
+        <activity android:name=".ActivityPreferences" >
+        </activity>
+        <activity
+            android:name=".ActivityTutorial"
+            android:label="@string/application_name" >
+        </activity>
+
+        <receiver android:name=".widget.WidgetProvider" android:label="BSeries : Planning" android:enabled="@bool/widget_enabled" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widget.WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+
+</manifest>

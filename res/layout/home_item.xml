@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_item" >
+
+    <TextView
+        android:id="@+id/homeItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeItemIcon"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textSize="16sp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/homeItemIcon"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:src="@drawable/home_planning" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/homeItemBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/homeItemIcon"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/badge"
+        android:gravity="center_vertical|center_horizontal"
+        android:minHeight="30dp"
+        android:minWidth="30dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:visibility="visible" >
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/subtitleIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"                  
+                    android:padding="5dp"  
+                    android:src="@drawable/bullet_archived" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/subtitleTitle"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="middle"                
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/subtitleSource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small Text"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:id="@+id/subtitleDownload"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/download" />
+                
+            </LinearLayout>
+            
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

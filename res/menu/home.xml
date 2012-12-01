@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/login"
+        android:icon="@drawable/menu_login"
+        android:title="@string/menu_login"
+        android:titleCondensed="@string/menu_login2"
+        android:showAsAction="ifRoom">
+    </item>
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/menu_logout"
+        android:title="@string/menu_logout"
+        android:titleCondensed="@string/menu_logout2"
+        android:visible="false">
+    </item>
+
+    <item
+        android:id="@+id/createAccount"
+        android:icon="@drawable/menu_register"
+        android:title="@string/menu_createAccount"
+        android:titleCondensed="@string/menu_createAccount2"
+        android:showAsAction="ifRoom">
+    </item>
+
+    <item
+        android:id="@+id/tutorial"
+        android:icon="@drawable/menu_tutorial"
+        android:title="@string/menu_tutorial"
+        android:titleCondensed="@string/menu_tutorial2"
+        android:showAsAction="ifRoom">
+    </item>
+
+    <item
+        android:id="@+id/parameters"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/menu_parameters"
+        android:titleCondensed="@string/menu_parameters2"
+        android:showAsAction="never">
+    </item>
+
+</menu>

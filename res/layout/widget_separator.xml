@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFDFDF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/widgetItemSeparator"
+        android:layout_width="match_parent"
+		android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textSize="13dp"
+        android:textColor="@color/gray1"
+        
+        android:textStyle="bold"
+        android:inputType="textCapCharacters" />
+
+</LinearLayout>

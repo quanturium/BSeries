@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_cat_general" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:disableDependentsState="false"
+            android:key="decallage_1_jour"
+            android:summary="@string/pref_sum_decalage_1_jour"
+            android:title="@string/pref_item_decalage_1_jour" >
+        </CheckBoxPreference>
+        <CheckBoxPreference android:summary="Affiche une popup permetant d'attribuer une note à chaque épisode lors du marquage comme vu" android:title="Attribuer une note" android:defaultValue="true" android:key="add_mark"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_cat_planning" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="planning_badge"
+            android:summary="@string/pref_sum_badge"
+            android:title="@string/pref_item_badge" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="planning_hide_notaired"
+            android:summary="@string/pref_sum_hide_notaired"
+            android:title="@string/pref_item_hide_notaired" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_cat_episodes" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="episodes_badge"
+            android:summary="@string/pref_sum_badge"
+            android:title="@string/pref_item_badge" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="episodes_onlyone"
+            android:summary="@string/pref_sum_onlyone"
+            android:title="@string/pref_item_onlyone" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_cat_notifications">
+        <CheckBoxPreference android:key="notifications_enabled" android:summary="@string/pref_sum_notifications" android:title="@string/pref_item_notifications" android:defaultValue="true"/>
+    </PreferenceCategory><PreferenceCategory android:title="@string/pref_cat_other" >
+        <ListPreference
+            android:defaultValue="60"
+            android:dialogTitle="@string/pref_item_planningReload"
+            android:entries="@array/planing_reload_values"
+            android:entryValues="@array/planning_reload_keys"
+            android:key="planning_reload_interval"
+            android:summary="@string/pref_sum_planningReload"
+            android:title="@string/pref_item_planningReload" >
+        </ListPreference>
+
+        <Preference
+            android:key="cache_clear"
+            android:summary="@string/pref_sum_cache_clear"
+            android:title="@string/pref_item_cache_clear" >
+        </Preference>
+        <Preference
+            android:key="a_propos"
+            android:title="@string/pref_item_a_propos" >
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_cat_social" >
+        <Preference
+            android:key="social_facebook"
+            android:summary="@string/pref_sum_facebook"
+            android:title="@string/pref_item_facebook" >
+        </Preference>
+        <Preference
+            android:key="social_twitter"
+            android:summary="@string/pref_sum_twitter"
+            android:title="@string/pref_item_twitter" >
+        </Preference>
+    </PreferenceCategory>
+    
+
+</PreferenceScreen>

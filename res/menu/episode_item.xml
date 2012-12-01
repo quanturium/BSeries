@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/episodeMarkSeen"
+        android:title="@string/menu_markSeenEpisode"
+        android:titleCondensed="@string/menu_markSeenEpisode2">
+    </item>
+
+    <item
+        android:id="@+id/episodeMarkUnseen"
+        android:title="@string/menu_markUnseenEpisode"
+        android:titleCondensed="@string/menu_markUnseenEpisode2">
+    </item>
+
+</menu>

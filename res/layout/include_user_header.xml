@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/showsHeader"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray1"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/headerAvatarBackground"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/avatar_background" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/headerAvatar"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:padding="7dp"
+        android:src="@drawable/avatar_default" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/headerConnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/headerUsername"
+        android:layout_below="@+id/headerUsername"
+        android:text="@string/header_connected"
+        android:textColor="@color/white" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/headerUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/headerAvatarBackground"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/headerAvatarBackground"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" >
+    </TextView>
+
+</RelativeLayout>

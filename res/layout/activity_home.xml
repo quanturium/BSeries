@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/emptyScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/include_disconnected" >
+    </include>
+
+    <include
+        android:id="@+id/loadingScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/include_loading" >
+    </include>
+
+    <include
+        android:id="@+id/contentScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/include_gridview" >
+    </include>
+
+    <LinearLayout
+        android:id="@+id/notificationLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/notification_globe"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/notificationCount"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notification_rounded"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:clickable="false"
+            android:focusable="false"        
+            android:gravity="center_vertical|center_horizontal"
+            android:text="0" />
+
+    </LinearLayout>
+
+</RelativeLayout>
